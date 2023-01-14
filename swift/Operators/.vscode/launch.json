@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug Operators",
+      "program": "${workspaceFolder:Operators}\\.build/debug/Operators",
+      "args": [],
+      "cwd": "${workspaceFolder:Operators}",
+      "preLaunchTask": "swift: Build Debug Operators"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Release Operators",
+      "program": "${workspaceFolder:Operators}\\.build/release/Operators",
+      "args": [],
+      "cwd": "${workspaceFolder:Operators}",
+      "preLaunchTask": "swift: Build Release Operators"
+    }
+  ]
+}
