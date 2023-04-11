@@ -1,8 +1,8 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:flutter_app/extensions/extensions.dart';
@@ -62,8 +62,7 @@ class FetchResult {
 
   @override
   String toString() =>
-      '''Fetch Result (isRetrievedFromCache = $isRetrievedFromCache), 
-         persons = $persons''';
+      'FetchResult(persons: $persons, isRetrievedFromCache: $isRetrievedFromCache)';
 }
 
 class PersonsBloc extends Bloc<LoadAction, FetchResult?> {
@@ -123,7 +122,7 @@ class _BlocHomePageState extends State<BlocHomePage> {
                         ),
                       );
                 },
-                child: const Text("Load Json 1"),
+                child: const Text('Load Json 1'),
               ),
               TextButton(
                 onPressed: () {
@@ -133,7 +132,7 @@ class _BlocHomePageState extends State<BlocHomePage> {
                         ),
                       );
                 },
-                child: const Text("Load Json 2"),
+                child: const Text('Load Json 2'),
               ),
             ],
           ),
