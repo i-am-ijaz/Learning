@@ -15,9 +15,9 @@ extension UrlString on PersonsUrl {
   String get urlString {
     switch (this) {
       case PersonsUrl.persons1:
-        return "http://127.0.0.1:5500/api/persons_1.json";
+        return 'http://127.0.0.1:5500/api/persons_1.json';
       case PersonsUrl.persons2:
-        return "http://127.0.0.1:5500/api/persons_2.json";
+        return 'http://127.0.0.1:5500/api/persons_2.json';
     }
   }
 }

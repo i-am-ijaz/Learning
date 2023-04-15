@@ -42,7 +42,7 @@ class _CubitHomePageState extends State<CubitHomePage> {
         builder: (ctx, snapshot) {
           final button = TextButton(
             onPressed: _cubit.pickRandomName,
-            child: const Text("Pick a random name"),
+            child: const Text('Pick a random name'),
           );
           switch (snapshot.connectionState) {
             case ConnectionState.none:
@@ -52,7 +52,7 @@ class _CubitHomePageState extends State<CubitHomePage> {
             case ConnectionState.active:
               return Column(
                 children: [
-                  Text(snapshot.data ?? ""),
+                  Text(snapshot.data ?? ''),
                   button,
                 ],
               );

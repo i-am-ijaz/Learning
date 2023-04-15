@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/shared/constants/strings.dart';
 
-class EmailTextField extends StatelessWidget {
-  const EmailTextField({
+class PasswordTextField extends StatelessWidget {
+  const PasswordTextField({
     Key? key,
-    required this.controller,
+    required this.passwordController,
   }) : super(key: key);
-  final TextEditingController controller;
+  final TextEditingController passwordController;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      controller: controller,
+      controller: passwordController,
       obscureText: true,
       decoration: const InputDecoration(
-        hintText: enterYourEmailHere,
+        hintText: enterYourPasswordHere,
       ),
     );
   }
