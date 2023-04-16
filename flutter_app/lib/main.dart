@@ -33,6 +33,7 @@ class MyApp extends StatelessWidget {
         create: (_) => AppBloc(
           loginApi: LoginApi(),
           notesApi: NotesApi(),
+          acceptedLoginHandle: const LoginHandle.fooBar(),
         ),
         child: Scaffold(
           appBar: AppBar(
